@@ -1,0 +1,8 @@
+(executable
+ (name test)
+ (libraries lib stdint benchmark))
+
+(rule
+ (alias runtest)
+ (action
+  (run ./test.exe)))
